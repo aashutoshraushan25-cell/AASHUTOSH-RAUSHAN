@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aashutosh Raushan | AI Developer Portfolio</title>
+  <meta
+    name="description"
+    content="Premium AI developer portfolio of Aashutosh Raushan, a Computer Science student focused on AI, web development, and cyber security."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif']
+          },
+          colors: {
+            ink: '#060816',
+            panel: 'rgba(12, 18, 38, 0.72)',
+            accent: '#79f2ff',
+            coral: '#ff8ca8',
+            gold: '#ffd36f'
+          },
+          boxShadow: {
+            glow: '0 0 40px rgba(121, 242, 255, 0.18)'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-ink text-slate-100 selection:bg-cyan-300 selection:text-slate-900">
+  <div id="loader" class="loader">
+    <div class="loader__ring"></div>
+    <p class="loader__text">Initializing portfolio experience...</p>
+  </div>
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="grid-overlay"></div>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/60 backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+      <a href="#home" class="flex items-center gap-3 font-display text-xl font-bold tracking-wide text-white">
+        <span class="brand-logo" aria-hidden="true">AR</span>
+        <span>AASHU</span>
+      </a>
+
+      <div class="hidden items-center gap-8 md:flex">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#certifications">Certificates</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#hobbies">Activities</a>
+        <a class="nav-link" href="#resume">Resume</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+
+      <button
+        id="menuToggle"
+        type="button"
+        class="md:hidden text-2xl text-white"
+        aria-label="Open navigation menu"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+      >
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="mobile-menu md:hidden">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certificates</a>
+      <a href="#projects">Projects</a>
+      <a href="#hobbies">Activities</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="relative mx-auto flex min-h-screen max-w-7xl items-center px-6 py-24 lg:px-8">
+      <div class="grid w-full gap-14 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+        <div data-aos="fade-up" data-aos-duration="900">
+          <span class="badge-pill mb-6 inline-flex">AI Developer Portfolio</span>
+          <p class="mb-4 font-display text-sm uppercase tracking-[0.35em] text-cyan-200/80">CSE Student | AI &amp; Web Developer</p>
+          <h1 class="font-display text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-7xl">
+            Aashutosh
+            <span class="gradient-text block">Raushan</span>
+          </h1>
+          <div class="mt-6 flex min-h-[48px] items-center text-xl text-slate-200 sm:text-2xl">
+            <span>I build as a&nbsp;</span>
+            <span id="typingText" class="typing-text"></span>
+          </div>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+            Computer Science student crafting intelligent digital products with a strong interest in applied AI, scalable web experiences, and security-aware engineering.
+          </p>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="assets/AashutoshRaushan_Resume.pdf" class="btn-primary" download>
+              <i class="fa-solid fa-file-arrow-down"></i>
+              Download Resume
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <i class="fa-regular fa-paper-plane"></i>
+              Contact Me
+            </a>
+          </div>
+          <div class="mt-10 flex flex-wrap gap-6 text-slate-300">
+            <div class="stat-card">
+              <span class="stat-card__number">3+</span>
+              <span class="stat-card__label">Core Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__number">AI</span>
+              <span class="stat-card__label">Focused Builder</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__number">24/7</span>
+              <span class="stat-card__label">Learning Mindset</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative" data-aos="zoom-in" data-aos-duration="1100">
+          <div class="hero-frame mx-auto max-w-md">
+            <div class="hero-frame__glow"></div>
+            <div class="hero-frame__card">
+              <img src="assets/aashutosh-profile.jpeg" alt="Portrait of Aashutosh Raushan" class="hero-frame__image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+      <div class="section-heading" data-aos="fade-up">
+        <span>About Me</span>
+        <h2>Driven by intelligent products and meaningful user experiences.</h2>
+      </div>
+      <div class="mt-12 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+        <article class="glass-card p-8" data-aos="fade-right" data-aos-duration="900">
+          <p class="text-lg leading-8 text-slate-300">
+            I'm Aashutosh Raushan, a Computer Science Engineering student building a strong foundation in software development with a growing specialization in AI-powered solutions. I enjoy turning ideas into polished digital experiences that feel modern, fast, and practical.
+          </p>
+          <p class="mt-6 text-lg leading-8 text-slate-300">
+            My career goal is to contribute to high-impact engineering teams where I can solve real-world problems, ship user-focused products, and keep growing as a developer who blends creativity with technical depth.
+          </p>
+        </article>
+        <div class="grid gap-6" data-aos="fade-left" data-aos-duration="950">
+          <div class="glass-card p-6">
+            <div class="icon-wrap"><i class="fa-solid fa-brain"></i></div>
+            <h3 class="mt-4 font-display text-2xl font-semibold text-white">AI Passion</h3>
+            <p class="mt-3 text-slate-300">Exploring how AI can improve workflows, automate decisions, and create smarter tools for users.</p>
+          </div>
+          <div class="glass-card p-6">
+            <div class="icon-wrap"><i class="fa-solid fa-code"></i></div>
+            <h3 class="mt-4 font-display text-2xl font-semibold text-white">Web Development</h3>
+            <p class="mt-3 text-slate-300">Designing responsive and interactive interfaces with clean structure, strong usability, and polished motion.</p>
+          </div>
+          <div class="glass-card p-6">
+            <div class="icon-wrap"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3 class="mt-4 font-display text-2xl font-semibold text-white">Cyber Security</h3>
+            <p class="mt-3 text-slate-300">Developing security-aware habits and curiosity around safer systems, secure coding, and digital trust.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+      <div class="section-heading" data-aos="fade-up">
+        <span>Education</span>
+        <h2>Academic journey shaping my technical foundation.</h2>
+      </div>
+      <div class="mt-12 grid gap-6">
+        <article class="glass-card p-8" data-aos="fade-up">
+          <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+            <div>
+              <h3 class="font-display text-2xl font-semibold text-white">Diploma, Computer Science &amp; Engineering</h3>
+              <p class="mt-2 text-lg text-cyan-200">Gandhi Institute for Education &amp; Technology</p>
+              <p class="mt-4 max-w-3xl text-slate-300">
+                Building a strong technical foundation in computer science through programming, web development, and practical software learning.
+              </p>
+            </div>
+            <div class="timeline-chip">2024 - 2027</div>
+          </div>
+        </article>
+        <article class="glass-card p-8" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+            <div>
+              <h3 class="font-display text-2xl font-semibold text-white">Senior Secondary (XII), Bihar School Examination Board (BSEB)</h3>
+              <p class="mt-2 text-lg text-cyan-200">Science</p>
+              <p class="mt-3 text-slate-300">Lalganj Intermediate College, Lalganj, Vaishali</p>
+              <p class="mt-3 text-slate-300">Percentage: 51.00%</p>
+            </div>
+            <div class="timeline-chip">2023</div>
+          </div>
+        </article>
+        <article class="glass-card p-8" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+            <div>
+              <h3 class="font-display text-2xl font-semibold text-white">Secondary (X), Bihar School Examination Board (BSEB)</h3>
+              <p class="mt-3 text-slate-300">R.K High School, Sain, Vaishali</p>
+              <p class="mt-3 text-slate-300">Percentage: 55.00%</p>
+            </div>
+            <div class="timeline-chip">2021</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+      <div class="section-heading" data-aos="fade-up">
+        <span>Skills</span>
+        <h2>Tools and technologies I use to build modern solutions.</h2>
+      </div>
+      <div class="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+        <div class="skill-card" data-aos="fade-up"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="50"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="150"><i class="fa-brands fa-python"></i><span>Python</span></div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200"><i class="fa-brands fa-java"></i><span>Java</span></div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="250"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300"><i class="fa-solid fa-robot"></i><span>AI Tools</span></div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="350"><i class="fa-solid fa-laptop-code"></i><span>Web Development</span></div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="400"><i class="fa-solid fa-database"></i><span>Problem Solving</span></div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="450"><i class="fa-solid fa-code-branch"></i><span>Version Control</span></div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="500"><i class="fa-solid fa-shield-halved"></i><span>Cyber Security Basics</span></div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="550"><i class="fa-solid fa-lightbulb"></i><span>Creative Thinking</span></div>
+      </div>
+    </section>
+
+    <section id="certifications" class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+      <div class="section-heading" data-aos="fade-up">
+        <span>Trainings / Certifications</span>
+        <h2>Learning experiences that support my AI and developer journey.</h2>
+      </div>
+      <div class="mt-12 grid gap-6 lg:grid-cols-2">
+        <article class="glass-card p-7" data-aos="fade-up">
+          <div class="icon-wrap"><i class="fa-solid fa-certificate"></i></div>
+          <h3 class="mt-5 font-display text-2xl font-semibold text-white">AI Introductory Workshop</h3>
+          <p class="mt-3 text-slate-300">
+            Foundation-level exposure to AI concepts, practical applications, and the growing role of intelligent systems in modern software development.
+          </p>
+        </article>
+        <article class="glass-card p-7" data-aos="fade-up" data-aos-delay="120">
+          <div class="icon-wrap"><i class="fa-solid fa-laptop-file"></i></div>
+          <h3 class="mt-5 font-display text-2xl font-semibold text-white">Self-Driven Project Training</h3>
+          <p class="mt-3 text-slate-300">
+            Hands-on learning through portfolio projects in smart reporting systems, resume tooling, and interview-focused AI concepts.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+      <div class="section-heading" data-aos="fade-up">
+        <span>Projects</span>
+        <h2>Selected work focused on intelligent systems and practical user value.</h2>
+      </div>
+      <div class="mt-12 grid gap-8 lg:grid-cols-3">
+        <article class="project-card" data-aos="fade-up">
+          <div class="project-visual project-visual--garbage">
+            <div class="project-visual__label">Analytics + Civic Tech</div>
+          </div>
+          <div class="project-card__body">
+            <h3>Smart Garbage Reporting &amp; Analytics System</h3>
+            <p>A civic-focused platform for reporting waste issues, tracking complaints, and visualizing trends for cleaner and smarter urban management.</p>
+            <div class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Analytics</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/aashutoshraushan25-cell/Smart-Garbage-Reporting-Analytics-System.in/actions/runs/26070968730" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://aashutoshraushan25-cell.github.io/Smart-Garbage-Reporting-Analytics-System.in/" target="_blank" rel="noreferrer">Live Demo</a>
+              <a href="assets/Smart-Garbage-Reporting-and-Analytics-System.pdf" target="_blank" rel="noreferrer">Project PPT</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="project-visual project-visual--interview">
+            <div class="project-visual__label">AI + Preparation</div>
+          </div>
+          <div class="project-card__body">
+            <h3>AI Interview Simulator</h3>
+            <p>An interview practice experience that helps candidates prepare with simulated prompts, smart feedback, and confidence-building mock sessions.</p>
+            <div class="tech-stack">
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>AI Tools</span>
+              <span>UX</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/aashutoshraushan25-cell" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="#contact">Contact for Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="project-visual project-visual--resume">
+            <div class="project-visual__label">Career Tools</div>
+          </div>
+          <div class="project-card__body">
+            <h3>Resume Builder</h3>
+            <p>A streamlined resume creation tool designed to help users generate clean, professional resumes quickly with a guided workflow.</p>
+            <div class="tech-stack">
+              <span>HTML</span>
+              <span>Tailwind</span>
+              <span>JavaScript</span>
+              <span>Design</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/aashutoshraushan25-cell" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="#contact">Contact for Demo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="hobbies" class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+      <div class="section-heading" data-aos="fade-up">
+        <span>Extra Curricular Activities</span>
+        <h2>Activities and interests that shape my personality beyond academics.</h2>
+      </div>
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-5">
+        <div class="glass-card p-6" data-aos="fade-up">
+          <div class="icon-wrap"><i class="fa-solid fa-music"></i></div>
+          <h3 class="mt-4 font-display text-xl font-semibold text-white">Dance</h3>
+          <p class="mt-3 text-slate-300">Enjoying dance as a creative outlet that builds confidence, expression, and positive energy.</p>
+        </div>
+        <div class="glass-card p-6" data-aos="fade-up" data-aos-delay="80">
+          <div class="icon-wrap"><i class="fa-solid fa-headphones"></i></div>
+          <h3 class="mt-4 font-display text-xl font-semibold text-white">Listening to Music</h3>
+          <p class="mt-3 text-slate-300">Music helps me stay refreshed, focused, and motivated while learning and building projects.</p>
+        </div>
+        <div class="glass-card p-6" data-aos="fade-up" data-aos-delay="160">
+          <div class="icon-wrap"><i class="fa-solid fa-book-open"></i></div>
+          <h3 class="mt-4 font-display text-xl font-semibold text-white">Reading Old or Classic Story Books</h3>
+          <p class="mt-3 text-slate-300">Reading classic stories strengthens imagination, perspective, and a thoughtful way of seeing the world.</p>
+        </div>
+        <div class="glass-card p-6" data-aos="fade-up" data-aos-delay="240">
+          <div class="icon-wrap"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <h3 class="mt-4 font-display text-xl font-semibold text-white">Help in Society</h3>
+          <p class="mt-3 text-slate-300">I value contributing positively to society through helpful actions, empathy, and community-minded thinking.</p>
+        </div>
+        <div class="glass-card p-6" data-aos="fade-up" data-aos-delay="320">
+          <div class="icon-wrap"><i class="fa-solid fa-motorcycle"></i></div>
+          <h3 class="mt-4 font-display text-xl font-semibold text-white">Bike Riding &amp; Traveling</h3>
+          <p class="mt-3 text-slate-300">Traveling and bike riding help me explore new places, stay energetic, and enjoy fresh experiences.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+      <div class="glass-card overflow-hidden p-8 sm:p-10" data-aos="zoom-in">
+        <div class="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div>
+            <span class="badge-pill">Resume</span>
+            <h2 class="mt-4 font-display text-3xl font-bold text-white sm:text-4xl">Ready for internship and placement opportunities.</h2>
+            <p class="mt-4 max-w-2xl text-lg leading-8 text-slate-300">
+              Download my resume to explore my academic background, projects, and focus areas in AI, web development, and emerging security practices.
+            </p>
+          </div>
+          <a href="assets/AashutoshRaushan_Resume.pdf" class="btn-primary whitespace-nowrap" download>
+            <i class="fa-solid fa-download"></i>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+      <div class="section-heading" data-aos="fade-up">
+        <span>Contact</span>
+        <h2>Let's connect for internships, collaborations, and developer opportunities.</h2>
+      </div>
+      <div class="mt-12 grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+        <div class="grid gap-6" data-aos="fade-right">
+          <div class="glass-card p-6">
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <p class="contact-item__label">Email</p>
+                <a href="mailto:aashutoshraushan25@gmail.com">aashutoshraushan25@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card p-6">
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <p class="contact-item__label">Phone</p>
+                <a href="tel:+917462965515">+91 7462965515</a>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card p-6">
+            <div class="contact-item">
+              <i class="fa-brands fa-github"></i>
+              <div>
+                <p class="contact-item__label">GitHub</p>
+                <a href="https://github.com/aashutoshraushan25-cell" target="_blank" rel="noreferrer">github.com/aashutoshraushan25-cell</a>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card p-6">
+            <div class="contact-item">
+              <i class="fa-brands fa-linkedin"></i>
+              <div>
+                <p class="contact-item__label">LinkedIn</p>
+                <a href="https://linkedin.com/in/aashutosh-raushan-a9937a382/" target="_blank" rel="noreferrer">linkedin.com/in/aashutosh-raushan-a9937a382/</a>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card p-6">
+            <div class="contact-item">
+              <i class="fa-brands fa-instagram"></i>
+              <div>
+                <p class="contact-item__label">Instagram</p>
+                <a href="https://www.instagram.com/its_aashutosh_raushan__27?igsh=cDJ4dXltYnl3YWk3" target="_blank" rel="noreferrer">instagram.com/its_aashutosh_raushan__27</a>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card p-6">
+            <div class="contact-item">
+              <i class="fa-brands fa-facebook-f"></i>
+              <div>
+                <p class="contact-item__label">Facebook</p>
+                <a href="https://www.facebook.com/share/1HYnwKdn7D/" target="_blank" rel="noreferrer">facebook.com/share/1HYnwKdn7D/</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="glass-card p-8" data-aos="fade-left" id="contactForm">
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div class="sm:col-span-1">
+              <label for="name" class="form-label">Name</label>
+              <input id="name" type="text" class="form-input" placeholder="Your name" required>
+            </div>
+            <div class="sm:col-span-1">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" type="email" class="form-input" placeholder="you@example.com" required>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="subject" class="form-label">Subject</label>
+              <input id="subject" type="text" class="form-input" placeholder="Project, internship, or collaboration" required>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" rows="6" class="form-input resize-none" placeholder="Write your message here..." required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn-primary mt-6">
+            <i class="fa-solid fa-paper-plane"></i>
+            Send Message
+          </button>
+          <p class="mt-4 text-sm text-slate-400">Submitting opens your email app with a pre-filled draft for quick contact.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 bg-slate-950/80 px-6 py-8 backdrop-blur-lg">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
+      <p class="text-sm text-slate-400">&copy; 2026 Aashutosh Raushan. Crafted for placements and internships.</p>
+      <div class="flex items-center gap-4 text-lg">
+        <a href="https://github.com/aashutoshraushan25-cell" class="footer-icon" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/aashutosh-raushan-a9937a382/" class="footer-icon" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/its_aashutosh_raushan__27?igsh=cDJ4dXltYnl3YWk3" class="footer-icon" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1HYnwKdn7D/" class="footer-icon" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="mailto:aashutoshraushan25@gmail.com" class="footer-icon" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
